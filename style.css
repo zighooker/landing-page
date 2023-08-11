@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: #1F2937;
+}
+
+.panel-1 {
+    background-color: #1F2937;
+}
+
+.panel-2 {
+    background-color: #FFFFFF;
+}
+
+.panel-3 {
+    background-color: #E5E7EB;
+}
+
+.panel-4 {
+    background-color: #FFFFFF;
+}
+
+.footer {
+    background-color: #1F2937;
+}
