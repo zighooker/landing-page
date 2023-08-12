@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-    margin: 0;    
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;    
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 .header {
     background-color: #1F2937;
     display: flex;
-    padding: 10px;
+    padding: 20px 100px;
     gap: 20px;
     align-items: center;
 }
@@ -27,13 +28,23 @@ body {
     margin-right: auto;
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 800;
 }
 
 .panel-1 {
     background-color: #1F2937;
     display: flex;
-    padding: 10px;
+    padding: 100px 100px;
     align-items: center;
+    justify-content: space-between;
+}
+
+.panel-1-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: flex-start;
 }
 
 .panel-1-content h1 {
@@ -48,8 +59,11 @@ body {
 }
 
 .panel-1 img {
-    width: 400px;
+    width: 250px;
     height: auto;
+    margin-left: 60px;
+    border: 5px solid #E5E7EB;
+    border-radius: 8px;
 }
 
 .panel-1-content button {
@@ -66,30 +80,50 @@ body {
     font-size: 36px;
     color: #1F2937;
     margin-top: 60px;
+    padding: 20px 100px;
 }
 
 .panel-2-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 20px;
     text-align: center;
     font-size: 18px;
-    justify-content: center;
-    padding: 60px;
+    justify-content: space-evenly;
+    padding: 60px 20px;
 }
 
 .panel-2-content p {
     flex-grow: 0;
     width: 200px;
+    color: #5e5e5e;
 }
 
 .panel-2-content img {
     max-width: 200px;
     max-height: 200px;
+    border: 5px solid #3882f6;
+    border-radius: 8px;
 }
 
 .panel-3 {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 150px;
+    gap: 20px;
+}
+
+.panel-3 #quote {
+    color: #5e5e5e;
+    font-size: 36px;
+    font-style: italic;
+}
+
+.panel-3 #quote-att {
+    font-size: 24px;
+    font-weight: 700;
+    align-self: flex-end;
 }
 
 .panel-4 {
@@ -102,11 +136,20 @@ body {
 
 .panel-4-content {
     background-color: #3882F6;
+    color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     gap: 60px;
     padding: 40px 60px;
     border-radius: 8px;
+}
+
+.panel-4-content button {
+    border-radius: 8px;
+    color:#FFFFFF;
+    border: solid 2px #FFFFFF;
+    background-color: #3882F6;
+    width: 150px;
 }
 
 .footer {
